@@ -1,0 +1,107 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+	<title>MY PAGE</title>
+    <link rel="stylesheet" type="text/css" href="CSSFILE.css">  
+	
+    </head>  
+<body>  
+  
+<div class="header">
+  <img src="Q:\icon.png" width="35" height = "45" />
+  <a class="logo">MY PAGE</a>
+  <div class="header-right">
+  <a class="active" href="file:///Q:/HTMLFILE.html">Home</a>
+  </div>
+</div>
+  
+<table style="width:100%">
+ <tr>
+ <td>
+	<div class="card">
+	<div class="container">
+	<h1>Function for copy text using JS</h1>
+    <p id="p1"><b>function copyToClipboard() {<br>
+	const str = document.getElementById('p1').innerText;<br>
+	const el = document.createElement('textarea');<br>
+	el.value = str;<br>
+	el.setAttribute('readonly', '');<br>
+	el.style.position = 'absolute';<br>
+	el.style.left = '-9999px';<br>
+	document.body.appendChild(el);<br>
+	el.select();<br>
+	document.execCommand('copy');<br>
+	document.body.removeChild(el);<br>
+	alert(`Copied Sucessfully`);<br>
+	}<br></b></p>
+	</div>
+		<div class="flex-end">	<button class="button" id="copy1" onclick="copyToClipboard()">Copy</button>	</div>
+	</div>
+
+</td>
+ <td>
+	<div class="card">
+	<div class="container">
+	<h1>Java's Class skelton</h1>
+    <p id="p1"><b>class XYZ name {<br>
+	<br>
+	public static void main(String s){<br>
+	{<br><br>
+	//line of code...............<br>
+	<br>
+		}   //end of main function<br>
+	<br>
+	}    //end of class<br></b></p>
+	</div>
+		<div class="flex-end">	<button class="button" id="copy1" onclick="copyToClipboard()">Copy</button>	</div>
+	</div>
+
+</td>
+
+
+	</tr>
+	
+	</table>
+	
+	<div class="footer">
+	<div>
+	<h3>Gajendra_kumar@pvt.ltd</h3></div>
+</div>
+
+	
+
+
+
+<script>
+function copyToClipboard() {
+  const str = document.getElementById('p1').innerText;
+  const el = document.createElement('textarea');
+  el.value = str;
+  el.setAttribute('readonly', '');
+  el.style.position = 'absolute';
+  el.style.left = '-9999px';
+  document.body.appendChild(el);
+  el.select();
+  document.execCommand('copy');
+  document.body.removeChild(el);
+  alert(`Copied Sucessfully`);
+}
+
+var d = new Date();
+document.getElementById("time_date").innerHTML = d;
+
+function asd(a){
+    if(a==1)
+        document.getElementById("asd").style.display="none";
+    else
+        document.getElementById("asd").style.display="block";
+}
+
+function newPerson() {
+  $('#wrapper').append('<div class="item"><p>Title</p></div>')
+}
+</script>
+
+
+  </body>  
+</html>  
